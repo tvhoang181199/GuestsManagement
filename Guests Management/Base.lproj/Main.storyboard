@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="Guests_Management" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZYu-Zy-0b3">
+                                <rect key="frame" x="-21" y="44" width="510" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ZYu-Zy-0b3" secondAttribute="height" multiplier="51:20" id="Ofn-3t-M3v">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="3.3000000000000682"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="973-rE-XLH">
+                                <rect key="frame" x="90" y="295" width="234" height="181"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="973-rE-XLH" secondAttribute="height" multiplier="234:181" id="1xP-m1-irq">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="-13.635359116022101"/>
+                                    </constraint>
+                                </constraints>
+                                <state key="normal" title="Button" image="ic-customer.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIO-gS-MGQ">
+                                <rect key="frame" x="110" y="548" width="195" height="195"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OIO-gS-MGQ" secondAttribute="height" multiplier="1:1" id="K0L-l3-NFb"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="ic-admin.png"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OIO-gS-MGQ" secondAttribute="trailing" constant="109" id="0BV-HW-2IZ">
+                                <variation key="heightClass=compact-widthClass=regular" constant="172"/>
+                            </constraint>
+                            <constraint firstItem="973-rE-XLH" firstAttribute="top" secondItem="ZYu-Zy-0b3" secondAttribute="bottom" constant="51" id="CKe-5N-358">
+                                <variation key="heightClass=compact-widthClass=regular" constant="-23"/>
+                            </constraint>
+                            <constraint firstItem="ZYu-Zy-0b3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="H3W-S6-8u6">
+                                <variation key="heightClass=compact-widthClass=regular" constant="-23"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="973-rE-XLH" secondAttribute="trailing" constant="90" id="K2k-Hx-5JX">
+                                <variation key="heightClass=compact-widthClass=regular" constant="442"/>
+                            </constraint>
+                            <constraint firstItem="ZYu-Zy-0b3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-21" id="fPa-6x-UcE">
+                                <variation key="heightClass=compact-widthClass=regular" constant="178"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="ZYu-Zy-0b3" secondAttribute="trailing" constant="-75" id="giU-ss-kU9">
+                                <variation key="heightClass=compact-widthClass=regular" constant="118"/>
+                            </constraint>
+                            <constraint firstItem="973-rE-XLH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="i1c-hz-bkq">
+                                <variation key="heightClass=compact-widthClass=regular" constant="134"/>
+                            </constraint>
+                            <constraint firstItem="OIO-gS-MGQ" firstAttribute="top" secondItem="973-rE-XLH" secondAttribute="bottom" constant="72" id="nLm-OT-azc">
+                                <variation key="heightClass=compact-widthClass=regular" constant="-180"/>
+                            </constraint>
+                            <constraint firstItem="OIO-gS-MGQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="yle-Gk-aKw">
+                                <variation key="heightClass=compact-widthClass=regular" constant="456"/>
+                            </constraint>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.25" y="117.39130434782609"/>
+        </scene>
+        <!--Admin View Controller-->
+        <scene sceneID="G9K-hz-VjJ">
+            <objects>
+                <viewController id="s7a-BK-hO5" customClass="AdminViewController" customModule="Guests_Management" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8tu-nz-1T3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gs0-AS-z8w">
+                                <rect key="frame" x="69" y="44" width="270" height="133"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Gs0-AS-z8w" secondAttribute="height" multiplier="270:133" id="1bT-nU-rPf"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="uEo-I9-Q1y">
+                                <rect key="frame" x="102" y="470" width="211" height="133"/>
+                                <color key="backgroundColor" red="0.39221125839999998" green="0.76189577580000001" blue="0.39600747819999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uEo-I9-Q1y" secondAttribute="height" multiplier="211:133" id="uPd-sP-GhG">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="2.5864661654135261"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="25"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="EDIT CURRENT EVENT ">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyE-sp-oni">
+                                <rect key="frame" x="38" y="771" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="eyE-sp-oni" secondAttribute="height" multiplier="1:1" id="qgo-0C-gnx"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="exit.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="dPm-76-jlb">
+                                <rect key="frame" x="102" y="283" width="211" height="133"/>
+                                <color key="backgroundColor" red="0.39221125839999998" green="0.76189577580000001" blue="0.39600747819999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dPm-76-jlb" secondAttribute="height" multiplier="211:133" id="aQ7-N1-5If"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="25"/>
+                                <inset key="contentEdgeInsets" minX="15" minY="10" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="CREATE NEW EVENT ">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4hS-7L-Aoj" firstAttribute="trailing" secondItem="eyE-sp-oni" secondAttribute="trailing" constant="301" id="3YH-0Z-QA5">
+                                <variation key="heightClass=compact-widthClass=regular" constant="717"/>
+                            </constraint>
+                            <constraint firstItem="4hS-7L-Aoj" firstAttribute="trailing" secondItem="Gs0-AS-z8w" secondAttribute="trailing" constant="75" id="5bE-is-Keg">
+                                <variation key="heightClass=compact-widthClass=regular" constant="240"/>
+                            </constraint>
+                            <constraint firstItem="uEo-I9-Q1y" firstAttribute="top" secondItem="dPm-76-jlb" secondAttribute="bottom" constant="54" id="9c2-Yu-nCN">
+                                <variation key="heightClass=compact-widthClass=regular" constant="-132"/>
+                            </constraint>
+                            <constraint firstItem="Gs0-AS-z8w" firstAttribute="leading" secondItem="4hS-7L-Aoj" secondAttribute="leading" constant="69" id="GXt-JV-ZOm">
+                                <variation key="heightClass=compact-widthClass=regular" constant="241"/>
+                            </constraint>
+                            <constraint firstItem="dPm-76-jlb" firstAttribute="top" secondItem="Gs0-AS-z8w" secondAttribute="bottom" constant="106" id="J2o-Jf-hsA">
+                                <variation key="heightClass=compact-widthClass=regular" constant="8"/>
+                            </constraint>
+                            <constraint firstItem="Gs0-AS-z8w" firstAttribute="top" secondItem="4hS-7L-Aoj" secondAttribute="top" id="MD8-0c-0dJ"/>
+                            <constraint firstItem="4hS-7L-Aoj" firstAttribute="trailing" secondItem="dPm-76-jlb" secondAttribute="trailing" constant="101" id="ODt-dB-fCS">
+                                <variation key="heightClass=compact-widthClass=regular" constant="418"/>
+                            </constraint>
+                            <constraint firstItem="eyE-sp-oni" firstAttribute="leading" secondItem="4hS-7L-Aoj" secondAttribute="leading" constant="38" id="SGk-DA-SLG">
+                                <variation key="heightClass=compact-widthClass=regular" constant="16"/>
+                            </constraint>
+                            <constraint firstItem="dPm-76-jlb" firstAttribute="leading" secondItem="4hS-7L-Aoj" secondAttribute="leading" constant="102" id="WmR-75-JwY">
+                                <variation key="heightClass=compact-widthClass=regular" constant="181"/>
+                            </constraint>
+                            <constraint firstItem="uEo-I9-Q1y" firstAttribute="leading" secondItem="4hS-7L-Aoj" secondAttribute="leading" constant="102" id="b3p-ak-iq9">
+                                <variation key="heightClass=compact-widthClass=regular" constant="448"/>
+                            </constraint>
+                            <constraint firstItem="4hS-7L-Aoj" firstAttribute="trailing" secondItem="uEo-I9-Q1y" secondAttribute="trailing" constant="101" id="djE-Dd-eL5">
+                                <variation key="heightClass=compact-widthClass=regular" constant="148"/>
+                            </constraint>
+                            <constraint firstItem="eyE-sp-oni" firstAttribute="top" secondItem="uEo-I9-Q1y" secondAttribute="bottom" constant="168" id="kBp-aI-s9L">
+                                <variation key="heightClass=compact-widthClass=regular" constant="17"/>
+                            </constraint>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4hS-7L-Aoj"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zKU-do-gxN"/>
+                    <connections>
+                        <outlet property="createNewEventButton" destination="dPm-76-jlb" id="3Uv-F7-hdO"/>
+                        <outlet property="editCurrentEventButton" destination="uEo-I9-Q1y" id="LY5-82-0xD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vsk-El-m8M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1301" y="502"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="exit.png" width="63.360000610351562" height="63.360000610351562"/>
+        <image name="header1.png" width="540" height="198.24000549316406"/>
+        <image name="header2.png" width="218.39999389648438" height="72"/>
+        <image name="ic-admin.png" width="150.72000122070312" height="150.72000122070312"/>
+        <image name="ic-customer.png" width="263.51998901367188" height="207.83999633789062"/>
+    </resources>
+</document>
