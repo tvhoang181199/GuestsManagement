@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		171595312374594C00D8FB0E /* CreateNewEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171595302374594C00D8FB0E /* CreateNewEventViewController.swift */; };
+		1715953523747F1C00D8FB0E /* AddGuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1715953423747F1C00D8FB0E /* AddGuestViewController.swift */; };
 		17D0B5D9236AB12800CABED1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0B5D8236AB12800CABED1 /* AppDelegate.swift */; };
 		17D0B5DB236AB12800CABED1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0B5DA236AB12800CABED1 /* SceneDelegate.swift */; };
 		17D0B5DD236AB12800CABED1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0B5DC236AB12800CABED1 /* MainViewController.swift */; };
@@ -48,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		171595302374594C00D8FB0E /* CreateNewEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewEventViewController.swift; sourceTree = "<group>"; };
+		1715953423747F1C00D8FB0E /* AddGuestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGuestViewController.swift; sourceTree = "<group>"; };
 		17D0B5D5236AB12800CABED1 /* Guests Management.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guests Management.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17D0B5D8236AB12800CABED1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17D0B5DA236AB12800CABED1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +148,8 @@
 				17D0B5E1236AB12C00CABED1 /* Assets.xcassets */,
 				17D0B5DC236AB12800CABED1 /* MainViewController.swift */,
 				17D0B61B236AD0C600CABED1 /* AdminViewController.swift */,
+				171595302374594C00D8FB0E /* CreateNewEventViewController.swift */,
+				1715953423747F1C00D8FB0E /* AddGuestViewController.swift */,
 				17D0B5E6236AB12C00CABED1 /* Info.plist */,
 			);
 			path = "Guests Management";
@@ -193,7 +199,6 @@
 				6F4EEB2E784E4668D87C98DA /* Pods-Guests ManagementTests.debug.xcconfig */,
 				B3B2A00387BD5BDFEF7DBEA4 /* Pods-Guests ManagementTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -458,7 +463,9 @@
 				17D0B61C236AD0C600CABED1 /* AdminViewController.swift in Sources */,
 				17D0B5DD236AB12800CABED1 /* MainViewController.swift in Sources */,
 				17D0B5D9236AB12800CABED1 /* AppDelegate.swift in Sources */,
+				171595312374594C00D8FB0E /* CreateNewEventViewController.swift in Sources */,
 				17D0B5DB236AB12800CABED1 /* SceneDelegate.swift in Sources */,
+				1715953523747F1C00D8FB0E /* AddGuestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

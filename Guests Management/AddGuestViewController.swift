@@ -1,28 +1,22 @@
 //
-//  AdminViewController.swift
+//  AddGuestViewController.swift
 //  Guests Management
 //
-//  Created by Vũ Hoàng Trịnh on 10/31/19.
+//  Created by Vũ Hoàng Trịnh on 11/7/19.
 //  Copyright © 2019 Vũ Hoàng Trịnh. All rights reserved.
 //
 
 import UIKit
 
-class AdminViewController: UIViewController {
+class AddGuestViewController: UIViewController {
 
-    @IBOutlet weak var createNewEventButton: UIButton!
-    @IBOutlet weak var editCurrentEventButton: UIButton!
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        createNewEventButton.layer.cornerRadius = 10
-        editCurrentEventButton.layer.cornerRadius = 10
 
         // Do any additional setup after loading the view.
     }
     
-    
+
     /*
     // MARK: - Navigation
 
@@ -32,9 +26,8 @@ class AdminViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
-    @IBAction func backToMain(_ sender: Any) {
-         self.dismiss(animated: true, completion: nil)
+
+    @IBAction func backToEvent(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
-    
 }
