@@ -9,6 +9,41 @@
 /* Begin PBXBuildFile section */
 		171595312374594C00D8FB0E /* CreateNewEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171595302374594C00D8FB0E /* CreateNewEventViewController.swift */; };
 		1715953523747F1C00D8FB0E /* AddGuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1715953423747F1C00D8FB0E /* AddGuestViewController.swift */; };
+		177F88112375749B0093C0C5 /* letter_J.png in Resources */ = {isa = PBXBuildFile; fileRef = 177F87F7237574990093C0C5 /* letter_J.png */; };
+		177F88132375749B0093C0C5 /* letter_U.png in Resources */ = {isa = PBXBuildFile; fileRef = 177F87F92375749A0093C0C5 /* letter_U.png */; };
+		177F88142375749B0093C0C5 /* letter_D.png in Resources */ = {isa = PBXBuildFile; fileRef = 177F87FA2375749A0093C0C5 /* letter_D.png */; };
+		177F88152375749B0093C0C5 /* letter_L.png in Resources */ = {isa = PBXBuildFile; fileRef = 177F87FB2375749A0093C0C5 /* letter_L.png */; };
+		177F88162375749B0093C0C5 /* letter_Y.png in Resources */ = {isa = PBXBuildFile; fileRef = 177F87FC2375749A0093C0C5 /* letter_Y.png */; };
+		177F88172375749B0093C0C5 /* letter_O.png in Resources */ = {isa = PBXBuildFile; fileRef = 177F87FD2375749A0093C0C5 /* letter_O.png */; };
+		177F88192375749B0093C0C5 /* letter_G.png in Resources */ = {isa = PBXBuildFile; fileRef = 177F87FF2375749A0093C0C5 /* letter_G.png */; };
+		177F881A2375749B0093C0C5 /* letter_K.png in Resources */ = {isa = PBXBuildFile; fileRef = 177F88002375749A0093C0C5 /* letter_K.png */; };
+		177F881B2375749B0093C0C5 /* letter_N.png in Resources */ = {isa = PBXBuildFile; fileRef = 177F88012375749A0093C0C5 /* letter_N.png */; };
+		177F881C2375749B0093C0C5 /* letter_I.png in Resources */ = {isa = PBXBuildFile; fileRef = 177F88022375749A0093C0C5 /* letter_I.png */; };
+		177F881D2375749B0093C0C5 /* letter_H.png in Resources */ = {isa = PBXBuildFile; fileRef = 177F88032375749A0093C0C5 /* letter_H.png */; };
+		177F881E2375749B0093C0C5 /* letter_W.png in Resources */ = {isa = PBXBuildFile; fileRef = 177F88042375749A0093C0C5 /* letter_W.png */; };
+		177F881F2375749B0093C0C5 /* letter_X.png in Resources */ = {isa = PBXBuildFile; fileRef = 177F88052375749A0093C0C5 /* letter_X.png */; };
+		177F88202375749B0093C0C5 /* letter_S.png in Resources */ = {isa = PBXBuildFile; fileRef = 177F88062375749A0093C0C5 /* letter_S.png */; };
+		177F88222375749B0093C0C5 /* letter_P.png in Resources */ = {isa = PBXBuildFile; fileRef = 177F88082375749B0093C0C5 /* letter_P.png */; };
+		177F88232375749B0093C0C5 /* letter_R.png in Resources */ = {isa = PBXBuildFile; fileRef = 177F88092375749B0093C0C5 /* letter_R.png */; };
+		177F88242375749B0093C0C5 /* letter_Q.png in Resources */ = {isa = PBXBuildFile; fileRef = 177F880A2375749B0093C0C5 /* letter_Q.png */; };
+		177F88252375749B0093C0C5 /* letter_T.png in Resources */ = {isa = PBXBuildFile; fileRef = 177F880B2375749B0093C0C5 /* letter_T.png */; };
+		177F88262375749B0093C0C5 /* letter_Z.png in Resources */ = {isa = PBXBuildFile; fileRef = 177F880C2375749B0093C0C5 /* letter_Z.png */; };
+		177F88272375749B0093C0C5 /* letter_V.png in Resources */ = {isa = PBXBuildFile; fileRef = 177F880D2375749B0093C0C5 /* letter_V.png */; };
+		177F88282375749B0093C0C5 /* letter_C.png in Resources */ = {isa = PBXBuildFile; fileRef = 177F880E2375749B0093C0C5 /* letter_C.png */; };
+		177F88292375749B0093C0C5 /* letter_M.png in Resources */ = {isa = PBXBuildFile; fileRef = 177F880F2375749B0093C0C5 /* letter_M.png */; };
+		177F882A2375749B0093C0C5 /* letter_A.png in Resources */ = {isa = PBXBuildFile; fileRef = 177F88102375749B0093C0C5 /* letter_A.png */; };
+		177F882D237575280093C0C5 /* Wedding.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 177F882C237575280093C0C5 /* Wedding.jpg */; };
+		177F882F237575BA0093C0C5 /* GuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177F882E237575BA0093C0C5 /* GuestViewController.swift */; };
+		177F8837237577C30093C0C5 /* letter_F.png in Resources */ = {isa = PBXBuildFile; fileRef = 177F8835237577C30093C0C5 /* letter_F.png */; };
+		177F883A237578690093C0C5 /* letter_B.png in Resources */ = {isa = PBXBuildFile; fileRef = 177F8838237578690093C0C5 /* letter_B.png */; };
+		177F883B237578690093C0C5 /* letter_E.png in Resources */ = {isa = PBXBuildFile; fileRef = 177F8839237578690093C0C5 /* letter_E.png */; };
+		177F883D237578ED0093C0C5 /* findmytable.png in Resources */ = {isa = PBXBuildFile; fileRef = 177F883C237578ED0093C0C5 /* findmytable.png */; };
+		177F883F23757BC50093C0C5 /* SelectNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177F883E23757BC50093C0C5 /* SelectNameViewController.swift */; };
+		177F884123757BE10093C0C5 /* GuestInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177F884023757BE10093C0C5 /* GuestInfoViewController.swift */; };
+		177F884323757CBC0093C0C5 /* SelectLetterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177F884223757CBC0093C0C5 /* SelectLetterViewController.swift */; };
+		177F8845237588100093C0C5 /* homeicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 177F88442375880F0093C0C5 /* homeicon.png */; };
+		177F884723758C860093C0C5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177F884623758C860093C0C5 /* LoginViewController.swift */; };
+		177F88492375B57A0093C0C5 /* DataTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177F88482375B57A0093C0C5 /* DataTable.swift */; };
 		17D0B5D9236AB12800CABED1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0B5D8236AB12800CABED1 /* AppDelegate.swift */; };
 		17D0B5DB236AB12800CABED1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0B5DA236AB12800CABED1 /* SceneDelegate.swift */; };
 		17D0B5DD236AB12800CABED1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0B5DC236AB12800CABED1 /* MainViewController.swift */; };
@@ -52,6 +87,41 @@
 /* Begin PBXFileReference section */
 		171595302374594C00D8FB0E /* CreateNewEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewEventViewController.swift; sourceTree = "<group>"; };
 		1715953423747F1C00D8FB0E /* AddGuestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGuestViewController.swift; sourceTree = "<group>"; };
+		177F87F7237574990093C0C5 /* letter_J.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_J.png; sourceTree = "<group>"; };
+		177F87F92375749A0093C0C5 /* letter_U.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_U.png; sourceTree = "<group>"; };
+		177F87FA2375749A0093C0C5 /* letter_D.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_D.png; sourceTree = "<group>"; };
+		177F87FB2375749A0093C0C5 /* letter_L.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_L.png; sourceTree = "<group>"; };
+		177F87FC2375749A0093C0C5 /* letter_Y.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_Y.png; sourceTree = "<group>"; };
+		177F87FD2375749A0093C0C5 /* letter_O.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_O.png; sourceTree = "<group>"; };
+		177F87FF2375749A0093C0C5 /* letter_G.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_G.png; sourceTree = "<group>"; };
+		177F88002375749A0093C0C5 /* letter_K.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_K.png; sourceTree = "<group>"; };
+		177F88012375749A0093C0C5 /* letter_N.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_N.png; sourceTree = "<group>"; };
+		177F88022375749A0093C0C5 /* letter_I.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_I.png; sourceTree = "<group>"; };
+		177F88032375749A0093C0C5 /* letter_H.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_H.png; sourceTree = "<group>"; };
+		177F88042375749A0093C0C5 /* letter_W.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_W.png; sourceTree = "<group>"; };
+		177F88052375749A0093C0C5 /* letter_X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_X.png; sourceTree = "<group>"; };
+		177F88062375749A0093C0C5 /* letter_S.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_S.png; sourceTree = "<group>"; };
+		177F88082375749B0093C0C5 /* letter_P.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_P.png; sourceTree = "<group>"; };
+		177F88092375749B0093C0C5 /* letter_R.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_R.png; sourceTree = "<group>"; };
+		177F880A2375749B0093C0C5 /* letter_Q.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_Q.png; sourceTree = "<group>"; };
+		177F880B2375749B0093C0C5 /* letter_T.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_T.png; sourceTree = "<group>"; };
+		177F880C2375749B0093C0C5 /* letter_Z.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_Z.png; sourceTree = "<group>"; };
+		177F880D2375749B0093C0C5 /* letter_V.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_V.png; sourceTree = "<group>"; };
+		177F880E2375749B0093C0C5 /* letter_C.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_C.png; sourceTree = "<group>"; };
+		177F880F2375749B0093C0C5 /* letter_M.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_M.png; sourceTree = "<group>"; };
+		177F88102375749B0093C0C5 /* letter_A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_A.png; sourceTree = "<group>"; };
+		177F882C237575280093C0C5 /* Wedding.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Wedding.jpg; sourceTree = "<group>"; };
+		177F882E237575BA0093C0C5 /* GuestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestViewController.swift; sourceTree = "<group>"; };
+		177F8835237577C30093C0C5 /* letter_F.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_F.png; sourceTree = "<group>"; };
+		177F8838237578690093C0C5 /* letter_B.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_B.png; sourceTree = "<group>"; };
+		177F8839237578690093C0C5 /* letter_E.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_E.png; sourceTree = "<group>"; };
+		177F883C237578ED0093C0C5 /* findmytable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = findmytable.png; sourceTree = "<group>"; };
+		177F883E23757BC50093C0C5 /* SelectNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectNameViewController.swift; sourceTree = "<group>"; };
+		177F884023757BE10093C0C5 /* GuestInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestInfoViewController.swift; sourceTree = "<group>"; };
+		177F884223757CBC0093C0C5 /* SelectLetterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLetterViewController.swift; sourceTree = "<group>"; };
+		177F88442375880F0093C0C5 /* homeicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homeicon.png; sourceTree = "<group>"; };
+		177F884623758C860093C0C5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		177F88482375B57A0093C0C5 /* DataTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTable.swift; sourceTree = "<group>"; };
 		17D0B5D5236AB12800CABED1 /* Guests Management.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guests Management.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17D0B5D8236AB12800CABED1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17D0B5DA236AB12800CABED1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +185,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		177F882B237574CA0093C0C5 /* Alphabet Icons */ = {
+			isa = PBXGroup;
+			children = (
+				177F88102375749B0093C0C5 /* letter_A.png */,
+				177F8838237578690093C0C5 /* letter_B.png */,
+				177F880E2375749B0093C0C5 /* letter_C.png */,
+				177F87FA2375749A0093C0C5 /* letter_D.png */,
+				177F8839237578690093C0C5 /* letter_E.png */,
+				177F8835237577C30093C0C5 /* letter_F.png */,
+				177F87FF2375749A0093C0C5 /* letter_G.png */,
+				177F88032375749A0093C0C5 /* letter_H.png */,
+				177F88022375749A0093C0C5 /* letter_I.png */,
+				177F87F7237574990093C0C5 /* letter_J.png */,
+				177F88002375749A0093C0C5 /* letter_K.png */,
+				177F87FB2375749A0093C0C5 /* letter_L.png */,
+				177F880F2375749B0093C0C5 /* letter_M.png */,
+				177F88012375749A0093C0C5 /* letter_N.png */,
+				177F87FD2375749A0093C0C5 /* letter_O.png */,
+				177F88082375749B0093C0C5 /* letter_P.png */,
+				177F880A2375749B0093C0C5 /* letter_Q.png */,
+				177F88092375749B0093C0C5 /* letter_R.png */,
+				177F88062375749A0093C0C5 /* letter_S.png */,
+				177F880B2375749B0093C0C5 /* letter_T.png */,
+				177F87F92375749A0093C0C5 /* letter_U.png */,
+				177F880D2375749B0093C0C5 /* letter_V.png */,
+				177F88042375749A0093C0C5 /* letter_W.png */,
+				177F88052375749A0093C0C5 /* letter_X.png */,
+				177F87FC2375749A0093C0C5 /* letter_Y.png */,
+				177F880C2375749B0093C0C5 /* letter_Z.png */,
+			);
+			path = "Alphabet Icons";
+			sourceTree = "<group>";
+		};
 		17D0B5CC236AB12800CABED1 = {
 			isa = PBXGroup;
 			children = (
@@ -144,12 +247,19 @@
 				17D0B5DA236AB12800CABED1 /* SceneDelegate.swift */,
 				17D0B5E3236AB12C00CABED1 /* LaunchScreen.storyboard */,
 				17D0B5DE236AB12800CABED1 /* Main.storyboard */,
-				17D0B61A236AB2D700CABED1 /* Pictures */,
 				17D0B5E1236AB12C00CABED1 /* Assets.xcassets */,
+				177F882B237574CA0093C0C5 /* Alphabet Icons */,
+				17D0B61A236AB2D700CABED1 /* Pictures */,
+				177F88482375B57A0093C0C5 /* DataTable.swift */,
+				177F884623758C860093C0C5 /* LoginViewController.swift */,
 				17D0B5DC236AB12800CABED1 /* MainViewController.swift */,
 				17D0B61B236AD0C600CABED1 /* AdminViewController.swift */,
 				171595302374594C00D8FB0E /* CreateNewEventViewController.swift */,
 				1715953423747F1C00D8FB0E /* AddGuestViewController.swift */,
+				177F882E237575BA0093C0C5 /* GuestViewController.swift */,
+				177F884223757CBC0093C0C5 /* SelectLetterViewController.swift */,
+				177F883E23757BC50093C0C5 /* SelectNameViewController.swift */,
+				177F884023757BE10093C0C5 /* GuestInfoViewController.swift */,
 				17D0B5E6236AB12C00CABED1 /* Info.plist */,
 			);
 			path = "Guests Management";
@@ -176,14 +286,17 @@
 		17D0B61A236AB2D700CABED1 /* Pictures */ = {
 			isa = PBXGroup;
 			children = (
+				177F882C237575280093C0C5 /* Wedding.jpg */,
 				17D0B60E236AB2C100CABED1 /* 163-1636515_add-button-png-cross.png */,
 				17D0B60B236AB2C000CABED1 /* clear.png */,
 				17D0B60A236AB2C000CABED1 /* exit.png */,
 				17D0B609236AB2C000CABED1 /* header1.png */,
 				17D0B60D236AB2C100CABED1 /* header2.png */,
+				177F883C237578ED0093C0C5 /* findmytable.png */,
 				17D0B60C236AB2C100CABED1 /* ic-admin.png */,
 				17D0B60F236AB2C100CABED1 /* ic-customer.png */,
 				17D0B610236AB2C100CABED1 /* ic-dropdown.png */,
+				177F88442375880F0093C0C5 /* homeicon.png */,
 				17D0B608236AB2C000CABED1 /* save.png */,
 			);
 			path = Pictures;
@@ -322,17 +435,46 @@
 			buildActionMask = 2147483647;
 			files = (
 				17D0B5E5236AB12C00CABED1 /* LaunchScreen.storyboard in Resources */,
+				177F882D237575280093C0C5 /* Wedding.jpg in Resources */,
 				17D0B618236AB2C100CABED1 /* ic-customer.png in Resources */,
+				177F88272375749B0093C0C5 /* letter_V.png in Resources */,
+				177F88222375749B0093C0C5 /* letter_P.png in Resources */,
+				177F881D2375749B0093C0C5 /* letter_H.png in Resources */,
+				177F881E2375749B0093C0C5 /* letter_W.png in Resources */,
+				177F88142375749B0093C0C5 /* letter_D.png in Resources */,
+				177F88132375749B0093C0C5 /* letter_U.png in Resources */,
+				177F883D237578ED0093C0C5 /* findmytable.png in Resources */,
+				177F88262375749B0093C0C5 /* letter_Z.png in Resources */,
 				17D0B615236AB2C100CABED1 /* ic-admin.png in Resources */,
+				177F883B237578690093C0C5 /* letter_E.png in Resources */,
+				177F8845237588100093C0C5 /* homeicon.png in Resources */,
+				177F88292375749B0093C0C5 /* letter_M.png in Resources */,
+				177F883A237578690093C0C5 /* letter_B.png in Resources */,
+				177F88112375749B0093C0C5 /* letter_J.png in Resources */,
 				17D0B616236AB2C100CABED1 /* header2.png in Resources */,
+				177F881A2375749B0093C0C5 /* letter_K.png in Resources */,
 				17D0B619236AB2C100CABED1 /* ic-dropdown.png in Resources */,
+				177F88152375749B0093C0C5 /* letter_L.png in Resources */,
+				177F88282375749B0093C0C5 /* letter_C.png in Resources */,
 				17D0B612236AB2C100CABED1 /* header1.png in Resources */,
 				17D0B614236AB2C100CABED1 /* clear.png in Resources */,
+				177F88252375749B0093C0C5 /* letter_T.png in Resources */,
 				17D0B5E2236AB12C00CABED1 /* Assets.xcassets in Resources */,
+				177F88172375749B0093C0C5 /* letter_O.png in Resources */,
+				177F881F2375749B0093C0C5 /* letter_X.png in Resources */,
 				17D0B611236AB2C100CABED1 /* save.png in Resources */,
 				17D0B617236AB2C100CABED1 /* 163-1636515_add-button-png-cross.png in Resources */,
+				177F88202375749B0093C0C5 /* letter_S.png in Resources */,
+				177F881B2375749B0093C0C5 /* letter_N.png in Resources */,
 				17D0B5E0236AB12800CABED1 /* Main.storyboard in Resources */,
+				177F882A2375749B0093C0C5 /* letter_A.png in Resources */,
 				17D0B613236AB2C100CABED1 /* exit.png in Resources */,
+				177F88162375749B0093C0C5 /* letter_Y.png in Resources */,
+				177F88232375749B0093C0C5 /* letter_R.png in Resources */,
+				177F88192375749B0093C0C5 /* letter_G.png in Resources */,
+				177F881C2375749B0093C0C5 /* letter_I.png in Resources */,
+				177F88242375749B0093C0C5 /* letter_Q.png in Resources */,
+				177F8837237577C30093C0C5 /* letter_F.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,11 +603,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				17D0B61C236AD0C600CABED1 /* AdminViewController.swift in Sources */,
+				177F884123757BE10093C0C5 /* GuestInfoViewController.swift in Sources */,
+				177F883F23757BC50093C0C5 /* SelectNameViewController.swift in Sources */,
 				17D0B5DD236AB12800CABED1 /* MainViewController.swift in Sources */,
+				177F884323757CBC0093C0C5 /* SelectLetterViewController.swift in Sources */,
 				17D0B5D9236AB12800CABED1 /* AppDelegate.swift in Sources */,
 				171595312374594C00D8FB0E /* CreateNewEventViewController.swift in Sources */,
+				177F882F237575BA0093C0C5 /* GuestViewController.swift in Sources */,
+				177F88492375B57A0093C0C5 /* DataTable.swift in Sources */,
 				17D0B5DB236AB12800CABED1 /* SceneDelegate.swift in Sources */,
 				1715953523747F1C00D8FB0E /* AddGuestViewController.swift in Sources */,
+				177F884723758C860093C0C5 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
