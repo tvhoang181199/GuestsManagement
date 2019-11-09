@@ -1,7 +1,0 @@
-${PODS_ROOT}/Target Support Files/Pods-Guests Management-Guests ManagementUITests/Pods-Guests Management-Guests ManagementUITests-frameworks.sh
-${BUILT_PRODUCTS_DIR}/DRColorPicker/DRColorPicker.framework
-${BUILT_PRODUCTS_DIR}/IGColorPicker/IGColorPicker.framework
-${BUILT_PRODUCTS_DIR}/M13Checkbox/M13Checkbox.framework
-${BUILT_PRODUCTS_DIR}/Realm/Realm.framework
-${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework
-${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework

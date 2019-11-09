@@ -1,6 +1,0 @@
-framework module DRColorPicker {
-  umbrella header "DRColorPicker-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -43,7 +43,7 @@
 		177F884323757CBC0093C0C5 /* SelectLetterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177F884223757CBC0093C0C5 /* SelectLetterViewController.swift */; };
 		177F8845237588100093C0C5 /* homeicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 177F88442375880F0093C0C5 /* homeicon.png */; };
 		177F884723758C860093C0C5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177F884623758C860093C0C5 /* LoginViewController.swift */; };
-		177F88492375B57A0093C0C5 /* DataTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177F88482375B57A0093C0C5 /* DataTable.swift */; };
+		177F88492375B57A0093C0C5 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177F88482375B57A0093C0C5 /* Database.swift */; };
 		17D0B5D9236AB12800CABED1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0B5D8236AB12800CABED1 /* AppDelegate.swift */; };
 		17D0B5DB236AB12800CABED1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0B5DA236AB12800CABED1 /* SceneDelegate.swift */; };
 		17D0B5DD236AB12800CABED1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0B5DC236AB12800CABED1 /* MainViewController.swift */; };
@@ -121,7 +121,7 @@
 		177F884223757CBC0093C0C5 /* SelectLetterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLetterViewController.swift; sourceTree = "<group>"; };
 		177F88442375880F0093C0C5 /* homeicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homeicon.png; sourceTree = "<group>"; };
 		177F884623758C860093C0C5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		177F88482375B57A0093C0C5 /* DataTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTable.swift; sourceTree = "<group>"; };
+		177F88482375B57A0093C0C5 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		17D0B5D5236AB12800CABED1 /* Guests Management.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guests Management.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17D0B5D8236AB12800CABED1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17D0B5DA236AB12800CABED1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -250,7 +250,7 @@
 				17D0B5E1236AB12C00CABED1 /* Assets.xcassets */,
 				177F882B237574CA0093C0C5 /* Alphabet Icons */,
 				17D0B61A236AB2D700CABED1 /* Pictures */,
-				177F88482375B57A0093C0C5 /* DataTable.swift */,
+				177F88482375B57A0093C0C5 /* Database.swift */,
 				177F884623758C860093C0C5 /* LoginViewController.swift */,
 				17D0B5DC236AB12800CABED1 /* MainViewController.swift */,
 				17D0B61B236AD0C600CABED1 /* AdminViewController.swift */,
@@ -610,7 +610,7 @@
 				17D0B5D9236AB12800CABED1 /* AppDelegate.swift in Sources */,
 				171595312374594C00D8FB0E /* CreateNewEventViewController.swift in Sources */,
 				177F882F237575BA0093C0C5 /* GuestViewController.swift in Sources */,
-				177F88492375B57A0093C0C5 /* DataTable.swift in Sources */,
+				177F88492375B57A0093C0C5 /* Database.swift in Sources */,
 				17D0B5DB236AB12800CABED1 /* SceneDelegate.swift in Sources */,
 				1715953523747F1C00D8FB0E /* AddGuestViewController.swift in Sources */,
 				177F884723758C860093C0C5 /* LoginViewController.swift in Sources */,

@@ -9,7 +9,6 @@ target 'Guests Management' do
   pod 'RealmSwift'
   pod 'IGColorPicker', '~> 0.4'
   pod 'SCLAlertView', '~> 0.8'
-  pod 'DRColorPicker'
 
   target 'Guests ManagementTests' do
     inherit! :search_paths
