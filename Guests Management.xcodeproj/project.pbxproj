@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		171595312374594C00D8FB0E /* CreateNewEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171595302374594C00D8FB0E /* CreateNewEventViewController.swift */; };
 		1715953523747F1C00D8FB0E /* AddGuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1715953423747F1C00D8FB0E /* AddGuestViewController.swift */; };
+		176C56F623782FF2003761CB /* ColorPalletes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176C56F523782FF2003761CB /* ColorPalletes.swift */; };
 		177F88112375749B0093C0C5 /* letter_J.png in Resources */ = {isa = PBXBuildFile; fileRef = 177F87F7237574990093C0C5 /* letter_J.png */; };
 		177F88132375749B0093C0C5 /* letter_U.png in Resources */ = {isa = PBXBuildFile; fileRef = 177F87F92375749A0093C0C5 /* letter_U.png */; };
 		177F88142375749B0093C0C5 /* letter_D.png in Resources */ = {isa = PBXBuildFile; fileRef = 177F87FA2375749A0093C0C5 /* letter_D.png */; };
@@ -87,6 +88,7 @@
 /* Begin PBXFileReference section */
 		171595302374594C00D8FB0E /* CreateNewEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewEventViewController.swift; sourceTree = "<group>"; };
 		1715953423747F1C00D8FB0E /* AddGuestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGuestViewController.swift; sourceTree = "<group>"; };
+		176C56F523782FF2003761CB /* ColorPalletes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalletes.swift; sourceTree = "<group>"; };
 		177F87F7237574990093C0C5 /* letter_J.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_J.png; sourceTree = "<group>"; };
 		177F87F92375749A0093C0C5 /* letter_U.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_U.png; sourceTree = "<group>"; };
 		177F87FA2375749A0093C0C5 /* letter_D.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letter_D.png; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 				177F882B237574CA0093C0C5 /* Alphabet Icons */,
 				17D0B61A236AB2D700CABED1 /* Pictures */,
 				177F88482375B57A0093C0C5 /* Database.swift */,
+				176C56F523782FF2003761CB /* ColorPalletes.swift */,
 				177F884623758C860093C0C5 /* LoginViewController.swift */,
 				17D0B5DC236AB12800CABED1 /* MainViewController.swift */,
 				17D0B61B236AD0C600CABED1 /* AdminViewController.swift */,
@@ -606,6 +609,7 @@
 				177F884123757BE10093C0C5 /* GuestInfoViewController.swift in Sources */,
 				177F883F23757BC50093C0C5 /* SelectNameViewController.swift in Sources */,
 				17D0B5DD236AB12800CABED1 /* MainViewController.swift in Sources */,
+				176C56F623782FF2003761CB /* ColorPalletes.swift in Sources */,
 				177F884323757CBC0093C0C5 /* SelectLetterViewController.swift in Sources */,
 				17D0B5D9236AB12800CABED1 /* AppDelegate.swift in Sources */,
 				171595312374594C00D8FB0E /* CreateNewEventViewController.swift in Sources */,

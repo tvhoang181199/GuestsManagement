@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 import RealmSwift
 
 class Guest: Object {
@@ -20,6 +21,6 @@ class Guest: Object {
 class Event: Object {
     @objc dynamic var name: String?
     @objc dynamic var font: String?
-    @objc dynamic var fontSize: String?
+    var fontSize: Int?
     @objc dynamic var fontColor: String?
 }

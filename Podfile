@@ -7,7 +7,7 @@ target 'Guests Management' do
 
   # Pods for Guests Management
   pod 'RealmSwift'
-  pod 'IGColorPicker', '~> 0.4'
+  pod 'ColorPickTip'
   pod 'SCLAlertView', '~> 0.8'
 
   target 'Guests ManagementTests' do

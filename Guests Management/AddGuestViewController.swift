@@ -25,7 +25,7 @@ class AddGuestViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-
+        //url of Realm file in simulator device
         print(Realm.Configuration.defaultConfiguration.fileURL)
 
         
@@ -47,7 +47,7 @@ class AddGuestViewController: UIViewController {
             SCLAlertView().showError("Error", subTitle: "Please complete all information!!!")
         }
         else {
-            var myGuest = Guest()
+            let myGuest = Guest()
             
             myGuest.firstName = firstNameTextField.text
             myGuest.lastName = lastNameTextField.text
@@ -59,10 +59,18 @@ class AddGuestViewController: UIViewController {
                 realm.add(myGuest)
             }
             SCLAlertView().showInfo("Success", subTitle: "Your guest has been added!")
+            firstNameTextField.text = ""
+            lastNameTextField.text = ""
+            guestsTextField.text = ""
+            tableTextField.text = ""
+            sectionTextField.text = ""
         }
     }
     
+    
+    
     @IBAction func backToEvent(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        performSegue(withIdentifier: "unwindToGuestView", sender: self)
+        //self.dismiss(animated: true, completion: nil)
     }
 }
