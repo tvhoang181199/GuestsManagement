@@ -63,10 +63,11 @@ class SelectNameViewController: UIViewController, UITableViewDelegate, UITableVi
             guard let indexPath = tableView.indexPathForSelectedRow else { return }
             let filteredGuestList = realm.objects(Guest.self).filter("lastName BEGINSWITH '\(selectedLetter)'")
             let guest = filteredGuestList[indexPath.row]
-            vc.name = "\(guest.lastName ?? "") \(guest.firstName ?? "")"
+            vc.lastName = "\(guest.lastName ?? "")"
+            vc.firstName = "\(guest.firstName ?? "")"
             vc.tableNumber = guest.table!
             vc.guests = guest.guests!
-            vc.section = guest.section!
+            vc.guestSection = guest.section!
         }
     }
     

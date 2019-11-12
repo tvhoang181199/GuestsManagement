@@ -9,7 +9,31 @@
 import UIKit
 import RealmSwift
 
-class GuestInfoViewController: UIViewController {
+class GuestsSameTableCell: UITableViewCell {
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var guestsLabel: UILabel!
+    
+    func setGuest(guest: Guest) {
+        nameLabel.text = "\(guest.lastName ?? "") \(guest.firstName ?? "")"
+        guestsLabel.text = guest.guests
+    }
+}
+
+class GuestInfoViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let guestSameTableList = realm.objects(Guest.self).filter("table = '\(tableNumber)'")
+        return guestSameTableList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let guestSameTableList = realm.objects(Guest.self).filter("table = '\(tableNumber)'")
+        let guest = guestSameTableList[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "guestsSameTableCell", for: indexPath) as! GuestsSameTableCell
+        cell.setGuest(guest: guest)
+        return cell
+    }
+    
+    @IBOutlet weak var tableView: UITableView!
     
     let realm = try! Realm()
     
@@ -18,24 +42,29 @@ class GuestInfoViewController: UIViewController {
     @IBOutlet weak var guestsLabel: UILabel!
     @IBOutlet weak var sectionLabel: UILabel!
     
-    var name: String = ""
+    var firstName: String = ""
+    var lastName: String = ""
     var tableNumber: String = ""
     var guests: String = ""
-    var section: String = ""
+    var guestSection: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let event = realm.objects(Event.self)
-        nameLabel.text = name
+        nameLabel.text = "\(lastName) \(firstName)"
         nameLabel.font = UIFont(name: event[0].font!, size: CGFloat((event[0].fontSize! as NSString).integerValue))
         nameLabel.textColor = event[0].fontColor!.StringToUIColor()
         tableNumberLabel.text = tableNumber
         guestsLabel.text = guests
-        sectionLabel.text = section
+        sectionLabel.text = guestSection
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        tableView.reloadData()
         // Do any additional setup after loading the view.
     }
-    
 
     /*
     // MARK: - Navigation

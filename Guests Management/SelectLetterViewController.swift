@@ -8,6 +8,7 @@
 
 import UIKit
 import RealmSwift
+import SCLAlertView
 
 class SelectLetterViewController: UIViewController {
     
@@ -85,11 +86,17 @@ class SelectLetterViewController: UIViewController {
             selectedLetter = ""
         }
         
-        let story = self.storyboard
-        let nextVC = story?.instantiateViewController(withIdentifier: "SelectNameViewController") as! SelectNameViewController
-        nextVC.modalPresentationStyle = .fullScreen
-        nextVC.selectedLetter = selectedLetter
-        self.present(nextVC, animated: true)
+        let checkList = realm.objects(Guest.self).filter("lastName BEGINSWITH '\(selectedLetter)'")
+        if (checkList.count == 0) {
+            SCLAlertView().showInfo("Infomation", subTitle: "There are not any people with last name starting with '\(selectedLetter)'")
+        }
+        else {
+            let story = self.storyboard
+            let nextVC = story?.instantiateViewController(withIdentifier: "SelectNameViewController") as! SelectNameViewController
+            nextVC.modalPresentationStyle = .fullScreen
+            nextVC.selectedLetter = selectedLetter
+            self.present(nextVC, animated: true)
+        }
     }
 
     /*
