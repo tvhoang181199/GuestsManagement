@@ -21,6 +21,6 @@ class Guest: Object {
 class Event: Object {
     @objc dynamic var name: String?
     @objc dynamic var font: String?
-    var fontSize: Int?
+    @objc dynamic var fontSize: String?
     @objc dynamic var fontColor: String?
 }

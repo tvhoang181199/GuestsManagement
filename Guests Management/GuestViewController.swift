@@ -7,12 +7,22 @@
 //
 
 import UIKit
+import RealmSwift
 
 class GuestViewController: UIViewController {
-
+    let realm = try! Realm()
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let event = realm.objects(Event.self)
+        titleLabel.text = event[0].name
+//        titleLabel.font = UIFont(name: event[0].font!, size: CGFloat((event[0].fontSize! as NSString).integerValue))
+//        titleLabel.textColor = event[0].fontColor!.StringToUIColor()
+        
+        
         // Do any additional setup after loading the view.
     }
     

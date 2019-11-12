@@ -19,16 +19,17 @@ class GuestCell: UITableViewCell {
     @IBOutlet weak var sectionLabel: UILabel!
     
     func setGuest(guest: Guest) {
-        nameLabel.text = "\(guest.firstName ?? "") \(guest.lastName ?? "")"
+        nameLabel.text = "\(guest.lastName ?? "") \(guest.firstName ?? "")"
         guestsLabel.text = guest.guests
         tableLabel.text = guest.table
         sectionLabel.text = guest.section
     }
 }
 
-class CreateEventViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class CreateEventViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var eventNameTextField: UITextField!
     @IBOutlet weak var fontLabel: UILabel!
     @IBOutlet weak var fontSizeLabel: UILabel!
@@ -39,10 +40,30 @@ class CreateEventViewController: UIViewController, UITableViewDataSource, UITabl
     let tempInput = UITextField(frame:CGRect.zero)
     var selectedFont: String? = "Helvetica"
     var fontSize: Int? = 35
-    var fontColor: String? = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1).UIColorToString()
+    var fontColor: String? = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1).UIColorToString()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let event = realm.objects(Event.self)
+        if (event.count == 0) {
+            titleLabel.text = "CREATE NEW EVENT"
+            fontLabel.text = selectedFont
+            fontLabel.font = UIFont(name: selectedFont!, size: 16)
+            fontSizeLabel.text = String(fontSize!)
+            fontColorLabel.backgroundColor = fontColor?.StringToUIColor()
+        }
+        else {
+            titleLabel.text = "EDIT CURRENT EVENT"
+            eventNameTextField.text = event[0].name
+            selectedFont = event[0].font
+            fontLabel.text = event[0].font
+            fontLabel.font = UIFont(name: event[0].font!, size: 16)
+            fontSize = Int(event[0].fontSize!)
+            fontSizeLabel.text = event[0].fontSize
+            fontColor = event[0].fontColor
+            fontColorLabel.backgroundColor = event[0].fontColor?.StringToUIColor()
+        }
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -52,8 +73,8 @@ class CreateEventViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let results = realm.objects(Guest.self)
-        return results.count
+        let guestList = realm.objects(Guest.self)
+        return guestList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -65,31 +86,43 @@ class CreateEventViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     @IBAction func changeFontButton(_ sender: Any) {
-        let fontPicker = UIPickerView()
+        let alertView = UIAlertController(
+            title: "Select Font",
+            message: "\n\n\n\n\n\n\n\n\n",
+            preferredStyle: .alert)
+
+        let fontPicker = UIPickerView(frame: CGRect(x: 0, y: 50, width: 260, height: 162))
+        fontPicker.dataSource = self
         fontPicker.delegate = self
+
+        // comment this line to use white color
+        fontPicker.backgroundColor = UIColor.lightGray.withAlphaComponent(0.2)
+
+        alertView.view.addSubview(fontPicker)
+
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
+            let event = self.realm.objects(Event.self)
+            if (event.count == 0){
+                self.selectedFont = "Helvetica"
+                self.fontLabel.text = self.selectedFont
+                self.fontLabel.font = UIFont(name: self.selectedFont!, size: 16)
+            }
+            else {
+                self.selectedFont = event[0].font
+                self.fontLabel.text = self.selectedFont
+                self.fontLabel.font = UIFont(name: self.selectedFont!, size: 16)
+            }
+        }
+        alertView.addAction(okAction)
+        alertView.addAction(cancelAction)
+        alertView.preferredAction = okAction
         
-        let tempInput = UITextField(frame:CGRect.zero)
-        tempInput.inputView = fontPicker
-        createToolbar(tempInput)
-        self.view.addSubview(tempInput)
-        tempInput.becomeFirstResponder()
+        present(alertView, animated: true, completion: { () in
+            fontPicker.frame.size.width = alertView.view.frame.size.width
+        })
     }
-    
-    func createToolbar(_ textField: UITextField) {
-        let toolBar = UIToolbar()
-        toolBar.sizeToFit()
-        
-        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(CreateEventViewController.dissmissKeyboard))
-        
-        toolBar.setItems([doneButton], animated: false)
-        toolBar.isUserInteractionEnabled = true
-        
-        textField.inputAccessoryView = toolBar
-    }
-    
-    @objc func dissmissKeyboard() {
-        view.endEditing(true)
-    }
+
     
     @IBAction func sliderValueChanged(_ sender: Any) {
         fontSizeSlider.minimumValue = 20
@@ -119,12 +152,7 @@ class CreateEventViewController: UIViewController, UITableViewDataSource, UITabl
        }
     }
     
-    //    @IBAction func createColorPicker(_ sender: Any) {
-//        colorPickerView = ColorPickerView(frame: CGRect(x: 0.0, y: 0.0, width: 200, height: 150))
-//        view.addSubview(colorPickerView)
-//    }
-    
-    @IBAction func unwindToGuestView(segue: UIStoryboardSegue) {
+    @IBAction func unwindToCreateEventView(segue: UIStoryboardSegue) {
         tableView.reloadData()
     }
     
@@ -148,7 +176,7 @@ class CreateEventViewController: UIViewController, UITableViewDataSource, UITabl
                 let myEvent = Event()
                 myEvent.name = eventNameTextField.text
                 myEvent.font = selectedFont
-                myEvent.fontSize = fontSize
+                myEvent.fontSize = String(fontSize!)
                 myEvent.fontColor = fontColor
                 try! realm.write {
                     realm.add(myEvent)
@@ -165,7 +193,7 @@ class CreateEventViewController: UIViewController, UITableViewDataSource, UITabl
                 try! realm.write {
                     event[0].name = eventNameTextField.text
                     event[0].font = selectedFont
-                    event[0].fontSize = fontSize
+                    event[0].fontSize = String(fontSize!)
                     event[0].fontColor = fontColor
                 }
                 SCLAlertView().showInfo("Success", subTitle: "Your event has been UPDATED!")
@@ -174,7 +202,7 @@ class CreateEventViewController: UIViewController, UITableViewDataSource, UITabl
         }
     }
     
-    @IBAction func backtoAdmin(_ sender: Any) {
+    @IBAction func backButton(_ sender: Any) {
          self.dismiss(animated: true, completion: nil)
     }
 }
@@ -192,9 +220,19 @@ extension CreateEventViewController: UIPickerViewDelegate, UIPickerViewDataSourc
         return UIFont.familyNames[row]
     }
     
+    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+        var label = UILabel()
+        if let v = view as? UILabel { label = v }
+        label.font = UIFont(name: UIFont.familyNames[row], size: 16)
+        label.text =  UIFont.familyNames[row]
+        label.textAlignment = .center
+        return label
+    }
+    
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         selectedFont = UIFont.familyNames[row]
         fontLabel.text = selectedFont
+        fontLabel.font = UIFont(name: selectedFont!, size: 16)
     }
 }
 
@@ -203,7 +241,6 @@ extension UIColor {
         let components = self.cgColor.components
         return "[\(components![0]), \(components![1]), \(components![2]), \(components![3])]"
     }
-    
 }
 
 extension String {

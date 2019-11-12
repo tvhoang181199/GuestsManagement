@@ -7,14 +7,35 @@
 //
 
 import UIKit
+import RealmSwift
+import SCLAlertView
 
 class MainViewController: UIViewController {
+    
+    let realm = try! Realm()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
     
+    
+    @IBAction func guestButton(_ sender: Any) {
+        let guests = realm.objects(Guest.self)
+        if (guests.count == 0 ){
+            SCLAlertView().showError("Error", subTitle: "You don't have any information about guests!!!")
+        }
+        else {
+            let story = self.storyboard
+            let vc = story?.instantiateViewController(withIdentifier: "GuestViewController") as! GuestViewController
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: false)
+        }
+    }
+    
+    
+    
+    @IBAction func unwindToMainView(segue:UIStoryboardSegue) {
+    }
 }
 

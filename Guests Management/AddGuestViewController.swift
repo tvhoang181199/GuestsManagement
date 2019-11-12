@@ -42,7 +42,7 @@ class AddGuestViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func addGuest(_ sender: Any) {
+    @IBAction func saveButton(_ sender: Any) {
         if (firstNameTextField.text == "" || lastNameTextField.text == "" || guestsTextField.text == "" || tableTextField.text == "" || sectionTextField.text == "") {
             SCLAlertView().showError("Error", subTitle: "Please complete all information!!!")
         }
@@ -69,8 +69,7 @@ class AddGuestViewController: UIViewController {
     
     
     
-    @IBAction func backToEvent(_ sender: Any) {
-        performSegue(withIdentifier: "unwindToGuestView", sender: self)
-        //self.dismiss(animated: true, completion: nil)
+    @IBAction func backButton(_ sender: Any) {
+        performSegue(withIdentifier: "unwindToCreateEventView", sender: self)
     }
 }
