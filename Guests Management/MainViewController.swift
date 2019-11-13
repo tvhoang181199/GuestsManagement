@@ -21,8 +21,9 @@ class MainViewController: UIViewController {
     
     
     @IBAction func guestButton(_ sender: Any) {
+        let event = realm.objects(Event.self)
         let guests = realm.objects(Guest.self)
-        if (guests.count == 0 ){
+        if (guests.count == 0 || event.count == 0){
             SCLAlertView().showError("Error", subTitle: "You don't have any information about guests!!!")
         }
         else {

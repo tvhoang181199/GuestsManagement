@@ -1674,7 +1674,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OiD-zT-FJz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="6p1-H9-YD1" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3176.811594202899" y="-305.35714285714283"/>
+            <point key="canvasLocation" x="3177" y="-307"/>
         </scene>
         <!--Guest Info View Controller-->
         <scene sceneID="IID-eX-FPw">
@@ -2151,12 +2151,12 @@
                                 <exclude reference="631-Lm-Qij"/>
                                 <exclude reference="AW8-2g-lI9"/>
                                 <exclude reference="RDN-gI-Nqs"/>
+                                <exclude reference="j0b-kt-PCQ"/>
+                                <exclude reference="zdG-ak-xGV"/>
                                 <exclude reference="cge-km-14Q"/>
                                 <exclude reference="hit-u3-NHT"/>
                                 <exclude reference="3f1-FG-dlc"/>
                                 <exclude reference="JLX-uZ-jai"/>
-                                <exclude reference="j0b-kt-PCQ"/>
-                                <exclude reference="zdG-ak-xGV"/>
                                 <exclude reference="Vif-S0-Wjt"/>
                                 <exclude reference="b77-tq-l2x"/>
                                 <exclude reference="6lq-nR-HWP"/>
@@ -2192,6 +2192,10 @@
                                 <exclude reference="aNu-46-D2a"/>
                                 <exclude reference="eqz-OQ-ArA"/>
                                 <exclude reference="uQP-6V-qQ3"/>
+                                <exclude reference="4gu-Xc-hyA"/>
+                                <exclude reference="WwI-1u-8Co"/>
+                                <include reference="j0b-kt-PCQ"/>
+                                <include reference="zdG-ak-xGV"/>
                                 <exclude reference="Iz6-Xr-sKM"/>
                                 <include reference="cge-km-14Q"/>
                                 <include reference="hit-u3-NHT"/>
@@ -2200,10 +2204,6 @@
                                 <include reference="JLX-uZ-jai"/>
                                 <exclude reference="NDG-Lf-emQ"/>
                                 <exclude reference="bRY-iP-cAr"/>
-                                <exclude reference="4gu-Xc-hyA"/>
-                                <exclude reference="WwI-1u-8Co"/>
-                                <include reference="j0b-kt-PCQ"/>
-                                <include reference="zdG-ak-xGV"/>
                                 <exclude reference="0E7-a2-rwD"/>
                                 <include reference="Vif-S0-Wjt"/>
                                 <include reference="b77-tq-l2x"/>
@@ -2256,7 +2256,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j9P-MN-T7I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="jBe-X7-IG2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4159.1517857142853" y="-307.24637681159425"/>
+            <point key="canvasLocation" x="4159" y="-307"/>
         </scene>
         <!--Admin View Controller-->
         <scene sceneID="G9K-hz-VjJ">
@@ -2730,7 +2730,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Table" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OxA-sL-F0E">
-                                <rect key="frame" x="255" y="464" width="40.666666666666657" height="20"/>
+                                <rect key="frame" x="254.99999999999997" y="464" width="40.666666666666657" height="20"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -2769,7 +2769,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DISPLAY RECORDS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRm-ei-krR">
-                                <rect key="frame" x="115.66666666666669" y="430" width="182.66666666666663" height="24"/>
+                                <rect key="frame" x="115.66666666666667" y="430" width="182.66666666666663" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="4cu-NX-ful"/>
                                     <constraint firstAttribute="width" constant="387" id="RDS-4d-2Tz"/>
@@ -2872,14 +2872,14 @@
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="guestCell" id="uvg-f3-SIa" customClass="GuestCell" customModule="Guests_Management" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.333332061767578"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uvg-f3-SIa" id="eXB-EU-5lw">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.333332061767578"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPq-eW-5dG">
-                                                    <rect key="frame" x="171" y="12.000000000000002" width="59" height="21.666666666666671"/>
+                                                    <rect key="frame" x="171" y="12" width="59" height="22"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="59" id="ELd-iM-DiA"/>
                                                     </constraints>
@@ -2888,7 +2888,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3AT-uq-IIl">
-                                                    <rect key="frame" x="341" y="12.000000000000002" width="53" height="20.666666666666671"/>
+                                                    <rect key="frame" x="341" y="12" width="53" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="53" id="aCg-Nn-6c6"/>
                                                     </constraints>
@@ -2897,7 +2897,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhs-Jn-f4R">
-                                                    <rect key="frame" x="260" y="12" width="39" height="21"/>
+                                                    <rect key="frame" x="260" y="11.999999999999998" width="39" height="21.333333333333329"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="39" id="ozP-0U-XVM"/>
                                                     </constraints>
@@ -2906,7 +2906,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vu Hoang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRV-US-RFq">
-                                                    <rect key="frame" x="14" y="10.999999999999998" width="141" height="21.333333333333329"/>
+                                                    <rect key="frame" x="14" y="11.000000000000002" width="141" height="21.666666666666671"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="141" id="0tK-va-eR5"/>
                                                     </constraints>
@@ -3287,7 +3287,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KMt-pO-mPq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="6V0-8p-l2k" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2193.75" y="492.75362318840581"/>
+            <point key="canvasLocation" x="2193" y="497"/>
         </scene>
         <!--Add Guest View Controller-->
         <scene sceneID="bz6-x9-eRg">
@@ -3744,7 +3744,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gup-VI-Edq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="2OB-Go-Ntg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3178.2608695652175" y="494.19642857142856"/>
+            <point key="canvasLocation" x="3177" y="497"/>
         </scene>
     </scenes>
     <resources>

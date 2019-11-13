@@ -203,7 +203,13 @@ class CreateEventViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     @IBAction func backButton(_ sender: Any) {
-         self.dismiss(animated: true, completion: nil)
+        let event = realm.objects(Event.self)
+        if (event.count == 0){
+            try! self.realm.write {
+                self.realm.deleteAll()
+            }
+        }
+        self.dismiss(animated: true, completion: nil)
     }
 }
 
