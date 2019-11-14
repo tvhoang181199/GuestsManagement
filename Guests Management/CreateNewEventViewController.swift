@@ -37,7 +37,6 @@ class CreateEventViewController: UIViewController, UITableViewDelegate, UITableV
     @IBOutlet weak var fontSizeSlider: UISlider!
     
     let realm = try! Realm()
-    let tempInput = UITextField(frame:CGRect.zero)
     var selectedFont: String? = "Helvetica"
     var fontSize: Int? = 35
     var fontColor: String? = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1).UIColorToString()
@@ -181,7 +180,7 @@ class CreateEventViewController: UIViewController, UITableViewDelegate, UITableV
                 try! realm.write {
                     realm.add(myEvent)
                 }
-                SCLAlertView().showInfo("Success", subTitle: "Your event has been ADDED!")
+                SCLAlertView().showSuccess("Success", subTitle: "Your event has been ADDED!")
                 self.dismiss(animated: true, completion: nil)
             }
         }
@@ -196,7 +195,7 @@ class CreateEventViewController: UIViewController, UITableViewDelegate, UITableV
                     event[0].fontSize = String(fontSize!)
                     event[0].fontColor = fontColor
                 }
-                SCLAlertView().showInfo("Success", subTitle: "Your event has been UPDATED!")
+                SCLAlertView().showSuccess("Success", subTitle: "Your event has been UPDATED!")
                 self.dismiss(animated: true, completion: nil)
             }
         }
@@ -205,11 +204,19 @@ class CreateEventViewController: UIViewController, UITableViewDelegate, UITableV
     @IBAction func backButton(_ sender: Any) {
         let event = realm.objects(Event.self)
         if (event.count == 0){
-            try! self.realm.write {
-                self.realm.deleteAll()
+           let appearance = SCLAlertView.SCLAppearance(
+                showCloseButton: false
+            )
+            let alert = SCLAlertView(appearance: appearance)
+            alert.addButton("Yes") { () -> Void in
+                try! self.realm.write {
+                    self.realm.deleteAll()
+                }
+                self.dismiss(animated: true, completion: nil)
             }
+            alert.addButton("No") { () -> Void in}
+            alert.showWarning("Warning", subTitle: "Your event haven't been created! Continue?")
         }
-        self.dismiss(animated: true, completion: nil)
     }
 }
 

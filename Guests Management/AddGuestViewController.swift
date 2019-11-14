@@ -58,7 +58,7 @@ class AddGuestViewController: UIViewController {
             try! realm.write {
                 realm.add(myGuest)
             }
-            SCLAlertView().showInfo("Success", subTitle: "Your guest has been added!")
+            SCLAlertView().showSuccess("Success", subTitle: "Your guest has been ADDED!")
             firstNameTextField.text = ""
             lastNameTextField.text = ""
             guestsTextField.text = ""

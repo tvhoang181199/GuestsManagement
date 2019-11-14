@@ -61,7 +61,7 @@ class AdminViewController: UIViewController {
                 self.present(vc, animated: true)
             }
             alert.addButton("Cancel") { () -> Void in}
-            alert.showWarning("Error", subTitle: "Creating new event will delete all the information from the previous or current event in the app")
+            alert.showWarning("Warning", subTitle: "Creating new event will delete all the information from the previous or current event in the app")
         }
     }
     
